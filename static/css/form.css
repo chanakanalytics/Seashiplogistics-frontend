@@ -1,0 +1,182 @@
+.form .form-check,
+.form .form-field{
+    position: relative;
+    padding: 10px 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+.form .form-switch .form-check-label,
+.form .form-field label,
+.form .form-field i{
+    position: absolute;
+    font-size: 15px;
+    color: var(--dark);
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: top var(--transition), font-size var(--transition);
+}
+.form .form-switch .form-check-label{
+    position: relative;
+    width: 95%;
+}
+.form .form-field i{
+    left: 30px;
+    top: 21px;
+    z-index: 1;
+}
+.form .form-field label{
+    left: 50px;
+    top: 19px;
+    z-index: 0;
+    background-color: #ffffff;
+    padding: 0px 10px;
+}
+.form .form-field .picker{
+    top: 55px;
+    left: 20px;
+}
+.form .form-field .picker .picker__holder{
+    border-radius: var(--border-radius) !important;
+    box-shadow: var(--shadow);
+    border: 0px;
+    color: var(--PrimaryColor);
+}
+.form .form-field .picker .picker__nav--next,
+.form .form-field .picker .picker__nav--prev{
+    width: 20px;
+    padding: 5px;
+}
+.form .form-field .picker .picker__nav--prev:before, 
+.form .form-field .picker .picker__nav--next:before{
+    border-top: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent;
+    border-right: 0.3em solid var(--PrimaryColor);
+}
+.form .form-switch .form-check-input{
+    margin-left: -2em;
+    margin-right: 12px;
+    width: 1.5rem;
+    border: 1px solid var(--PrimaryColorLight);
+    margin-bottom: 3.5px;
+}
+.form .form-switch .form-check-input:not(:checked){
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23380262'/%3e%3c/svg%3e");
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%238a8a8a'/%3e%3c/svg%3e"); */
+}
+.form .form-switch .form-check-input:checked{
+    background-color: var(--SecondaryColorLight);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23380262'/%3e%3c/svg%3e");
+}
+.form .form-switch .form-check-input:focus{
+    box-shadow: none;
+}
+.form .form-field .picker .picker__nav--next:before {
+    border-right: 0;
+    border-left: 0.3em solid var(--PrimaryColor);
+}
+.form .form-check .form-container,
+.form .form-field input{
+    width: 100%;
+    padding: 7px 10px 7px 35px;
+}
+.form .form-field .picker .picker__select--year,
+.form .form-field .picker .picker__select--month{
+    width: max-content;
+}
+.form .form-field .picker .picker__select--year,
+.form .form-field .picker .picker__select--month,
+.form .form-check .form-container,
+.form .form-field input{
+    z-index: 2;
+    background-color: transparent !important;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    transition: width var(--transition);
+    border-radius: var(--border-radius);
+    font-size: 15px;
+}
+
+.form .form-field .picker .picker__button--today,
+.form .form-field .picker .picker__button--clear,
+.form .form-field .picker .picker__button--close{
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.form .form-field .picker .picker__day--today::before{
+    content: none;
+}
+.picker__day--infocus:hover, 
+.picker__day--outfocus:hover,
+.picker__day--highlighted:hover,
+.picker--focused .picker__day--highlighted{
+    background-color: var(--SecondaryColorLight);
+    color: var(--PrimaryColor);
+    border: 1px solid var(--PrimaryColorLight);
+    border-radius: var(--border-radius);
+}
+.picker__day--infocus:hover, 
+.picker__day--outfocus:hover{
+    border: 1px solid var(--SecondaryColorLight);
+}
+
+.form .form-field input:focus-visible,
+.form .form-field select:focus-visible{
+    outline: none;
+}
+.form .form-field input::placeholder,
+.form .form-field select::placeholder{
+    color: transparent;
+}
+.form .form-field input:focus ~ label,
+.form .form-field input:not(:placeholder-shown) ~ label{
+    font-size: 10px;
+    top: 4px;
+    z-index: 5;
+}
+.accordion-body .submit{
+    margin-left: auto;
+}
+.form .dropdown-menu{
+    /* display: block !important; */
+    background: #ffffff;
+    top: 55px !important;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    color: var(--PrimaryColor) !important;
+    padding: 7px;
+}
+.form .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form .submit a,
+.form .submit button{
+    border: 2px solid var(--PrimaryColorLight);
+    color: var(--PrimaryColor);
+    font-weight: 500;
+    background-color: transparent;
+    transition: background-color var(--transition), color var(--transition), border var(--transition);
+    width: max-content;
+    height: max-content;
+    min-width: 40px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: flex;
+    padding: 10px 5px;
+}
+.form .submit a i,
+.form .submit button i{
+    position: relative;
+    margin: auto;
+}
+.form .submit a:hover,
+.form .submit button:hover{
+    border: 2px solid var(--PrimaryColorLight);
+    background-color: var(--SecondaryColorLight);
+    color: var(--PrimaryColor);
+}

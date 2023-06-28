@@ -1,0 +1,202 @@
+.btn-outline-secondary{
+    color: var(--gray);
+    border: 1px solid var(--gray);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active{
+    background-color: var(--SecondaryColorLight);
+    border: 1px solid var(--SecondaryColorLight);
+    color: var(--PrimaryColor) !important;
+    box-shadow: var(--shadow);
+}
+.btn-outline-secondary:active:focus,
+.btn-outline-secondary:focus{
+    box-shadow: none;
+}
+.card{
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    border: 0px;
+    background-color: transparent;
+    background-color: #ffffff;
+}
+.card .card-header{
+    background-color: var(--SecondaryColorLight);
+    color: var(--PrimaryColor);
+}
+/* .dataTables_wrapper .row{
+    margin-bottom: 1.5rem !important;
+} */
+/* .pagination .paginate_button,
+.pagination .active{
+    border: 1px solid var(--PrimaryColorLight);
+} */
+.page-link{
+    border: 1px solid var(--PrimaryColorLight);
+    font-weight: 500;
+    color: var(--PrimaryColor);
+}
+.page-link:hover,
+.page-item.active .page-link{
+    font-weight: 700;
+    color: var(--PrimaryColor);
+    background-color: var(--SecondaryColorLight);
+    border: 1px solid var(--PrimaryColorLight);
+}
+.page-item.active .page-link:focus,
+.page-link:focus{
+    box-shadow: none;
+}
+.pagination .disabled .page-link{
+    border: 1px solid var(--PrimaryColorLight);
+    color: var(--gray);
+    text-decoration: line-through;
+}
+.pagination .paginate_button:first-child,
+.page-item:first-child .page-link{
+    border-top-left-radius: var(--border-radius) !important;
+    border-bottom-left-radius: var(--border-radius) !important;
+}
+.pagination .paginate_button:last-child,
+.page-item:last-child .page-link{
+    border-top-right-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+}
+.pagination .paginate_button a{
+    font-weight: 400;
+    color: var(--PrimaryColor);
+}
+.pagination .paginate_button:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.pagination .paginate_button:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.table-responsive .dataTables_filter{
+    height: 38px !important;
+    width: max-content;
+    margin-left: auto;
+}
+.table-responsive .dataTables_filter label{
+    height: inherit;
+    color: var(--gray);
+    font-weight: 500 !important;
+    width: 150px;
+    background-color: #ffffff;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius);
+}
+.table-responsive .dataTables_filter label input{
+    border-radius: var(--border-radius);
+    border: 0px;
+    height: 30px;
+    background-color: #ffffff;
+    padding: 0px 20px;
+    width: 10px !important;
+    position: absolute;
+    right: 2rem;
+    transition: background-color var(--transition), width var(--transition), height var(--transition), right var(--transition);
+}
+.table-responsive .dataTables_filter label input:focus{
+    box-shadow: var(--shadow);
+    background-color: #ffffff;
+    color: var(--PrimaryColor);
+    font-weight: 500;
+    width: 340px !important;
+    height: 38px;
+    right: 1.5rem;
+}
+.table-responsive .dataTables_wrapper .row{
+    padding: 10px;
+}
+table.table-bordered.dataTable tbody th,
+table.table-bordered.dataTable tbody td {
+    border-bottom: 0.5px solid #d5d5d5;
+}
+.dataTables_info{
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    color: var(--PrimaryColor);
+}
+.table-responsive .btn-group,
+.table.table-bordered.dataTable {
+    border-right-width: 0;
+    /* border: 1px solid var(--PrimaryColor); */
+    border-radius: var(--border-radius);
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+tfoot{
+    display: none;
+}
+/* td, tfoot, th, thead, tr{
+    border: 0px;
+} */
+table.table-bordered.dataTable th:last-child,  
+table.table-bordered.dataTable td:last-child{
+    border-right: 0px;
+}
+table.dataTable>thead>tr>th:not(.sorting_disabled), 
+table.dataTable>thead>tr>td:not(.sorting_disabled){
+    background-color: #fff;
+    color: var(--PrimaryColor);
+    border-bottom: 1px solid var(--gray);
+    font-size: 15px;
+    font-weight: 700;
+}
+.table-striped>tbody>tr:nth-of-type(even)>*,
+.table-striped>tbody>tr:nth-of-type(odd)>*{
+    background-color: #ffffff !important;
+    --bs-table-accent-bg: none;
+}
+table.table-bordered.dataTable th:last-child{
+    border-top-right-radius: var(--border-radius);
+}
+table.table-bordered.dataTable th:first-child{
+    border-top-left-radius: var(--border-radius);
+}
+table td,
+table th{
+    text-align: center;
+}
+.table-actions a {
+	font-size: 18px;
+	width: 34px;
+	height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: var(--border-radius);
+	/* color: #2b2a2a */
+    background: #f1f1f1;
+	border: 2px solid transparent;
+    transition: background-color var(--transition), color var(--transition), border var(--transition);
+}
+.table-actions .view{
+    color: var(--PrimaryColor);
+    background-color: transparent;
+}
+.table-actions .delete{
+    color: red;
+    background-color: transparent;
+}
+.table-actions .view:hover{
+    color: var(--PrimaryColor);
+    background-color: var(--SecondaryColorLight);
+	border: 2px solid var(--PrimaryColor);
+}
+.table-actions .delete:hover{
+    color: red;
+    background-color: var(--SecondaryColorLight);
+	border: 2px solid red;
+}
