@@ -20,9 +20,8 @@
     box-shadow: none;
 }
 .card{
-    box-shadow: var(--shadow);
     border-radius: var(--border-radius);
-    border: 0px;
+    border: solid 1px var(--borderGray);
     background-color: transparent;
     background-color: #ffffff;
 }

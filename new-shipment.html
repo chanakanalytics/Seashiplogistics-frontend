@@ -15,14 +15,10 @@
         <link href="assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
         <link href="assets/plugins/datetimepicker/css/classic.css" rel="stylesheet" />
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-              crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-              integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-              crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <link rel="stylesheet" href="./static/css/style.css">
         <link rel="stylesheet" href="./static/css/sidebar.css">
         <link rel="stylesheet" href="./static/css/login.css">
@@ -43,8 +39,11 @@
                     <div>
                         <h4 class="logo-text">SEASHIP<br>LOGISTICS</h4>
                     </div>
-                    <div class="toggle-icon ms-auto">
-                        <i class="fas fa-align-left"></i>
+                    <div class="toggle-icon ms-auto toggle-icon-on">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </div>
+                    <div class="toggle-icon ms-auto toggle-icon-off">
+                        <i class="fa-solid fa-angles-right"></i>
                     </div>
                 </div>
                 <!--navigation-->
@@ -58,23 +57,23 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;" class="has-arrow">
+                        <a href="#" class="has-arrow">
                             <div class="parent-icon">
                                 <i class="fa-solid fa-server"></i>
                             </div>
                             <div class="menu-title">Master</div>
                         </a>
                         <ul>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>Agent Master</a></li>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>B/L Master</a></li>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>Carrier Master</a></li>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>CFS Master</a></li>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>Consignee Master</a></li>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>Container Master</a></li>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>Customer Master</a></li>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>Port Master</a></li>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>Shipper Master</a></li>
-                            <li> <a href="/master.html"><i class="fas fa-arrow-circle-right"></i>Transhipment Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>Agent Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>B/L Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>Carrier Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>CFS Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>Consignee Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>Container Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>Customer Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>Port Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>Shipper Master</a></li>
+                            <li> <a href="/"><i class="fas fa-arrow-circle-right"></i>Transhipment Master</a></li>
                         </ul>
                     </li>
                     <li class="menu-label">UI Elements</li>
@@ -139,14 +138,17 @@
                 <div class="topbar d-flex align-items-center">
                     <nav class="navbar mainNav navbar-expand-lg navbar-light pb-0 position-sticky">
                         <div class="mobile-toggle-menu">
-                            <i class="fas fa-align-left"></i>
+                            <i class="fa-solid fa-bars"></i>
                         </div>
                         <div class="ms-auto user-box dropdown">
                             <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret"
                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <!-- <img src="./assets/logo/tab.png" class="user-img" alt="user avatar"> -->
-                                <i class="far fa-user-circle user-img"></i>
-                                <div class="user-info ps-3">
+                                <!-- <i class="far fa-user-circle user-img"></i> -->
+                                <span class="user-img">
+                                    PS
+                                </span>
+                                <div class="user-info ps-2">
                                     <p class="user-name mb-0">Pauline Seitz</p>
                                     <p class="designattion mb-0">Web Designer</p>
                                 </div>
