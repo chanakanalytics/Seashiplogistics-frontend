@@ -177,14 +177,26 @@
 
         <div class="page-wrapper">
             <div class="page-content">
-                <h6 class="page-heading">DataTable Import</h6>
+                <div class="d-flex align-items-center justify-content-between">
+                    <h6 class="page-heading">DataTable Import</h6>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleVerticallycenteredModal">Add Master</button>
+                </div>
+                
                 
             
                 <div class="table-responsive mt-5">
                     <table id="masterTable" class="table mb-0 pt-3 table-striped table-bordered">
                         <thead class="table-light">
                             <tr>
-                                <th>Shipment ID</th>
+                                <th class="check-box-row">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                    
+                                </th>
+                                <th class="text-start">Shipment ID</th>
                                 <th>Company Name</th>
                                 <th>Date</th>
                                 <th>Actions</th>
@@ -192,6 +204,12 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -205,6 +223,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -218,6 +242,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -231,6 +261,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -244,6 +280,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -257,6 +299,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -270,6 +318,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -283,6 +337,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -296,6 +356,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -309,6 +375,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="text-start">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="checkall" name="checkall"/>
+                                        <label for="checkall"></label>
+                                    </div>
+                                </td>
                                 <td>
                                     <h6 class="mb-0 pt-2 text-start font-14 text-dark">SL2023040354</h6>
                                 </td>
@@ -323,6 +395,71 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="exampleVerticallycenteredModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    
+                    <div class="modal-content">
+                        
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Add Master</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-4 pb-4 pt-0">
+                                <form class="form ">
+                                    <div class="row">
+                                        
+                                        <div class="form-field col-12 col-md-6 px-2">
+                                            <i class="me-1 far fa-id-badge"></i>
+                                            <input type="text" name="shippername" id="shippername" value=""
+                                                placeholder=" " autocomplete="off">
+                                            <label for="shippername">Name</label>
+                                        </div>
+
+                                        <div class="form-field col-12 col-md-6 px-2">
+                                            <i class="me-1 far fa-id-badge"></i>
+                                            <input type="text" name="email" id="email" value=""
+                                                placeholder=" " autocomplete="off">
+                                            <label for="email">Email</label>
+                                        </div>
+
+
+                                        <div class="form-field col-12 col-md-6 px-2">
+                                            <i class="me-1 far fa-id-badge"></i>
+                                            <input type="text" name="consigneeaddress" id="consigneeaddress" value=""
+                                                placeholder=" " autocomplete="off">
+                                            <label for="consigneeaddress">Company</label>
+                                        </div>
+
+
+                                        <div class="form-field col-12 col-md-6 px-2">
+                                            <i class="me-1 far fa-id-badge"></i>
+                                            <input type="text" name="kycid" id="kycid" value=""
+                                                placeholder=" " autocomplete="off">
+                                            <label for="kycid">KYC</label>
+                                        </div>
+
+
+                                        <div class="form-field col-12 col-md-12 px-2">
+                                            <i class="me-3 far fa-id-badge"></i>
+                                            <input type="text" name="consigneeaddress" id="consigneeaddress" value=""
+                                                placeholder=" " autocomplete="off">
+                                            <label for="consigneeaddress">Address</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-end pt-4">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Add</button>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        
+                    </div>
                 </div>
             </div>
         </div>
