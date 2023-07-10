@@ -170,6 +170,14 @@ table.table-bordered.dataTable th:first-child{
     text-align: left;
     
 }
+table.table-bordered.dataTable th.check-box-row:first-child::before, 
+table.table-bordered.dataTable th.check-box-row:first-child::after{
+    display: none;
+}
+table.table-bordered.dataTable th.check-box-row:first-child{
+    padding-right: 10px;
+    width: 18px !important;
+}
 table.table-bordered.dataTable th{
     font-size: 13px !important;
     color: #9c9c9c !important;

@@ -103,6 +103,53 @@ body {
     color: #a5a3a3;
 }
 
+
+.check-box input[type=checkbox] + label {
+    display: block;
+    cursor: pointer;
+  }
+  
+.check-box input[type=checkbox] {
+    display: none;
+  }
+  
+  .check-box input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid var(--gray);
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  .check-box input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  .check-box input[type=checkbox]:checked + label:before {
+    background-color: var(--PrimaryColor);
+    border-color: var(--PrimaryColor);
+    color: #fff;
+  }
+  
+  .check-box input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  .check-box input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: var(--PrimaryColorLight);
+    border-color: var(--PrimaryColorLight);
+  }
+
+
 @media only screen and (max-width: 425px) {
     .upperNav .textLink {
         font-size: 0.95rem;
@@ -419,6 +466,23 @@ body {
 /* --------------------
     Bottom Banner
 --------------------- */
+.btn-primary{
+    background-color: var(--PrimaryColor);
+    border-color: var(--PrimaryColor);
+}
+.btn-primary:hover{
+    background-color: var(--PrimaryColorLight);
+    border-color: var(--PrimaryColorLight);
+}
+.btn-primary:focus{
+    background-color: var(--PrimaryColorLight);
+    border-color: var(--PrimaryColorLight);
+    box-shadow: none;
+}
+.btn{
+    font-size: 14px;
+}
+
 
 .bottomBanner>div {
     border-right: 1px solid var(--PrimaryColor);
@@ -2422,7 +2486,7 @@ main.quoteBody {
     z-index: 2999 !important;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .modal .modal-dialog {
         width: max-content;
         max-width: calc(100vw - 100px) !important;
