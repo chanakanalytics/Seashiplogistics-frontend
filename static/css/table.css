@@ -1,11 +1,11 @@
 .btn-outline-secondary{
     color: var(--gray);
     border: 1px solid var(--borderGray);
-    font-weight: 500;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) !important;
     background-color: transparent;
+    font-weight: 500;
     font-size: 13px;
-    padding: 8px 15px;
+    padding: 6px 12px;
     color: var(--dark);
 }
 .btn-outline-secondary:hover,
@@ -17,6 +17,20 @@
 }
 .btn-outline-secondary:active:focus,
 .btn-outline-secondary:focus{
+    box-shadow: none;
+}
+.btn-primary{
+    background-color: var(--PrimaryColor);
+    border-color: var(--PrimaryColor);
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: var(--border-radius) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+    background-color: var(--PrimaryColorLight);
+    border-color: var(--PrimaryColorLight);
     box-shadow: none;
 }
 .card{
