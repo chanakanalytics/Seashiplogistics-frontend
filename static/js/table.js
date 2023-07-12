@@ -15,7 +15,13 @@ $(document).ready(function() {
 $(document).ready(function() {
     var masterTable = $('#masterTable').DataTable( {
         lengthChange: false,
-        buttons: [ 'excel', 'pdf', 'print', 'copy']
+        buttons: [{
+            extend: 'collection',
+            text: '<i class="fas fa-file-export"></i>',
+            buttons: [
+                'excel', 'pdf', 'print', 'copy'
+            ]
+        }]
     } );
     masterTable.buttons().container()
         .appendTo( '#masterTable_wrapper .col-md-6:eq(0)');
