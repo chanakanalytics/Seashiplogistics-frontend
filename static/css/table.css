@@ -2,7 +2,7 @@
     color: var(--gray);
     border: 1px solid var(--borderGray);
     border-radius: var(--border-radius) !important;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
     font-weight: 500;
     font-size: 13px;
     padding: 6px 12px;
@@ -115,7 +115,7 @@
     border-radius: var(--border-radius);
     border: 0px;
     height: 38px;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 0px 10px;
     width: 200px !important;
     border: solid 1px var(--borderGray);

@@ -131,6 +131,23 @@ a {
 
 .page-content {
 	padding: 40px;
+	position: relative;
+}
+.page-wrapper{
+	position: relative;
+	margin-bottom: 0;
+	background-color: #f7f8f9;
+}
+.page-wrapper::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: url('../../assets/images/background.png');
+	background-size: 50%;
+	opacity: 0.07;
+	content: "";
 }
 
 .page-footer {
@@ -1859,7 +1876,6 @@ a {
 	font-size: 1.3rem;
 	margin-top: -1em;
 	margin-bottom: -1em;
-	margin-right: 5px
 }
 
 

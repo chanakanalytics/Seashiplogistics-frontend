@@ -169,6 +169,15 @@
     display: flex;
     padding: 10px 5px;
 }
+.form .submit button{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 10px !important;
+    justify-content: center;
+    background-color: var(--PrimaryColor);
+    color: #fff;
+}
 .form .submit a i,
 .form .submit button i{
     position: relative;
