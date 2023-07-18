@@ -124,7 +124,13 @@ a {
 	margin-bottom: 30px;
 	margin-left: 250px;
 	transition: 0.3s;
+	min-height: calc(100vh - 65px);
 }
+
+.page-wrapper.no-header {
+	min-height: 100vh;
+}
+
 .page-wrapper.toggled{
 	margin-left: 70px;
 }
@@ -145,8 +151,8 @@ a {
 	bottom: 0;
 	right: 0;
 	background-image: url('../../assets/images/background.png');
-	background-size: 50%;
-	opacity: 0.07;
+	background-size: 30%;
+	opacity: 0.10;
 	content: "";
 }
 
