@@ -14,6 +14,8 @@ $(document).ready(function () {
     shipmentTable.buttons().container()
         .appendTo('#shipmentTable_wrapper .col-md-6:eq(0)');
 });
+
+
 $(document).ready(function () {
     var masterTable = $('#masterTable').DataTable({
         lengthChange: false,

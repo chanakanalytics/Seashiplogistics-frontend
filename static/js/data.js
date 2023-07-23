@@ -102,3 +102,14 @@ $("#portDischarge-segment1-field3").pickadate({
     selectMonths: true,
     selectYears: true
 })
+
+
+$(".portDischarge-segment1-field4").pickadate({
+    selectMonths: true,
+    selectYears: true
+})
+
+$(".portDischarge-segment1-field5").pickadate({
+    selectMonths: true,
+    selectYears: true
+})

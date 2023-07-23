@@ -101,6 +101,10 @@ function addNewLoadingPortForm(event, targetId) {
         selectYears: true
     })
 }
+
+
+
+
 function addNewDischargePortForm(event, targetId) {
     event.preventDefault();
     const accordionBody = document.getElementById(targetId);
