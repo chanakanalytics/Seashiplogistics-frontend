@@ -150,10 +150,10 @@ function addNewTranshipmentForm(event, targetId) {
     const uniqueId = generateUniqueId();
     var input1 = fieldBulider("Port Name", ["far", "fa-id-badge"], `PortName-${uniqueId}`, `${targetId}-${uniqueId}-field1`, 6)
     var input2 = fieldBulider("Vessel Name", ["far", "fa-id-badge"], `Vessel-${uniqueId}`, `${targetId}-${uniqueId}-field2`, 6)
-    var input3 = fieldBulider("E.T.A  Port", ["far", "fa-id-badge"], `etaPort-${uniqueId}`, `${targetId}-${uniqueId}-field3`, 6)
+    var input3 = fieldBulider("E.T.A  Port", ["fa-regular", "fa-calendar-days"], `etaPort-${uniqueId}`, `${targetId}-${uniqueId}-field3`, 6)
     var input4 = fieldBulider("Port Agent Name", ["far", "fa-id-badge"], `PortAgent-${uniqueId}`, `${targetId}-${uniqueId}-field4`, 6)
     var input5 = fieldBulider("Voyage", ["far", "fa-id-badge"], `LoadingPort-${uniqueId}`, `${targetId}-${uniqueId}-field5`, 6)
-    var input6 = fieldBulider("E.T.D  Port", ["far", "fa-id-badge"], `LoadingVessel-${uniqueId}`, `${targetId}-${uniqueId}-field6`, 6)
+    var input6 = fieldBulider("E.T.D  Port", ["fa-regular", "fa-calendar-days"], `LoadingVessel-${uniqueId}`, `${targetId}-${uniqueId}-field6`, 6)
     var deleteBtn = deleteButtonBuilder();
 
 
