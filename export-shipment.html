@@ -239,7 +239,7 @@
                                                 <label for="name">Container Size</label>
                                             </div>
                                             <div class="submit text-end col-12 col-lg-6">
-                                                <a class="delete ms-auto me-2 delete-container-clone" >
+                                                <a class="delete ms-auto me-2" onclick="deleteAccordionSegment(event)">
                                                     <i class="far fa-trash-alt"></i>
                                                 </a>
                                             </div>
@@ -249,14 +249,12 @@
                                         </div>
 
 
-                                        <div id="addContainer">
-
-                                        </div>
                                     </div>
 
+                                    
                                     <div class="accordion-body row">
                                         <div class="submit col-12">
-                                            <a class="add ms-auto px-3 add-container-btn" >
+                                            <a class="add ms-auto px-3" onclick="addNewContainerForm(event, 'Container')">
                                                 <i class="fas fa-plus me-2"></i> Add More
                                             </a>
                                         </div>
@@ -386,7 +384,6 @@
                                 </div>
                             </div>
 
-
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -429,18 +426,17 @@
                                 </div>
                             </div>
 
-
-
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#forwardbl" aria-expanded="flase" aria-controls="forwardbl">
+                                            data-bs-target="#transhipment" aria-expanded="flase" aria-controls="transhipment">
                                             Transhipment Details
                                     </button>
                                 </h2>
-                                <div id="forwardbl" class="accordion-collapse collapse">
+                                <div id="transhipment" class="accordion-collapse collapse">
                                     <div class="accordion-body">
                                         <div class="delete-row row">
+
                                             <div class="form-field col-12 col-md-6">
                                                 <i class="me-3 far fa-id-badge"></i>
                                                 <input type="text" name="forwardblno" id="forwardblno" value=""
@@ -454,8 +450,6 @@
                                                     placeholder=" " autocomplete="off">
                                                 <label for="forwardblno"> Vessel Name</label>
                                             </div>
-
-                                        
 
                                             <div class="form-field col-12 col-lg-6">
                                                 <i class="fa-regular fa-calendar-days"></i>
@@ -471,7 +465,6 @@
                                                 <label for="forwardblno"> Port Agent Name</label>
                                             </div>
 
-
                                             <div class="form-field col-12 col-md-6">
                                                 <i class="me-3 far fa-id-badge"></i>
                                                 <input type="text" name="forwardblno" id="forwardblno" value=""
@@ -479,15 +472,15 @@
                                                 <label for="forwardblno"> Voyage</label>
                                             </div>
 
-
                                             <div class="form-field col-12 col-lg-6">
                                                 <i class="fa-regular fa-calendar-days"></i>
                                                 <input type="" class="portDischarge-segment1-field5" name="DischargeDate-1" id="portDischarge-segment1-field5" placeholder=" "
                                                         autocomplete="off">
                                                 <label for="DischargeDate-1">E.T.D  Port</label>
                                             </div>
+
                                             <div class="submit text-end col-12 col-lg-6">
-                                                <a class="delete ms-auto me-2 delete-transhipment-clone" >
+                                                <a class="delete ms-auto me-2" onclick="deleteAccordionSegment(event)">
                                                     <i class="far fa-trash-alt"></i>
                                                 </a>
                                             </div>
@@ -495,22 +488,18 @@
                                             <div class="col-12"><hr/></div>
                                         </div>
 
-                                        <div id="addTranshipment">
-
-                                        </div>
+                                       
                                     </div>
 
                                     <div class="accordion-body row">
                                         <div class="submit col-12">
-                                            <a class="add ms-auto px-3 add-transhipment-btn" >
+                                            <a class="add ms-auto px-3" onclick="addNewTranshipmentForm(event, 'transhipment')">
                                                 <i class="fas fa-plus me-2"></i> Add More
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            
                         </div>
                         <div class="form-field submit mt-3 justify-content-center">
                             <button class="btn px-5 me-auto w-auto"><span class="px-4 d-block">Submit</span></button>

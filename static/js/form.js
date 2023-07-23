@@ -105,6 +105,97 @@ function addNewLoadingPortForm(event, targetId) {
 
 
 
+function addNewContainerForm(event, targetId) {
+    event.preventDefault();
+    const accordionBody = document.getElementById(targetId);
+    const newSegment = document.createElement('div');
+    newSegment.classList.add('accordion-body', 'row');
+    const uniqueId = generateUniqueId();
+    var input1 = fieldBulider("Container NO", ["far", "fa-id-badge"], `LoadingPort-${uniqueId}`, `${targetId}-${uniqueId}-field1`, 6)
+    var input2 = fieldBulider("Container Size", ["far", "fa-id-badge"], `LoadingVessel-${uniqueId}`, `${targetId}-${uniqueId}-field2`, 6)
+    var deleteBtn = deleteButtonBuilder();
+
+
+    var hr = document.createElement("hr");
+    const formBody = document.createElement("div")
+    formBody.classList.add( "col-12")
+    formBody.appendChild(hr)
+
+    
+    newSegment.appendChild(input1)
+    newSegment.appendChild(input2)
+    newSegment.appendChild(deleteBtn)
+    newSegment.appendChild(formBody)
+    accordionBody.insertBefore(newSegment, accordionBody.lastElementChild);
+    console.log(accordionBody.lastElementChild);
+    const portLoadingInput = {
+        "port": `${targetId}-${uniqueId}-field1`,
+        "vessel": `${targetId}-${uniqueId}-field2`
+    };
+    initializeTypeahead(portLoadingData, portLoadingInput);
+
+
+
+    
+    
+}
+
+
+
+function addNewTranshipmentForm(event, targetId) {
+    event.preventDefault();
+    const accordionBody = document.getElementById(targetId);
+    const newSegment = document.createElement('div');
+    newSegment.classList.add('accordion-body', 'row');
+    const uniqueId = generateUniqueId();
+    var input1 = fieldBulider("Port Name", ["far", "fa-id-badge"], `PortName-${uniqueId}`, `${targetId}-${uniqueId}-field1`, 6)
+    var input2 = fieldBulider("Vessel Name", ["far", "fa-id-badge"], `Vessel-${uniqueId}`, `${targetId}-${uniqueId}-field2`, 6)
+    var input3 = fieldBulider("E.T.A  Port", ["far", "fa-id-badge"], `etaPort-${uniqueId}`, `${targetId}-${uniqueId}-field3`, 6)
+    var input4 = fieldBulider("Port Agent Name", ["far", "fa-id-badge"], `PortAgent-${uniqueId}`, `${targetId}-${uniqueId}-field4`, 6)
+    var input5 = fieldBulider("Voyage", ["far", "fa-id-badge"], `LoadingPort-${uniqueId}`, `${targetId}-${uniqueId}-field5`, 6)
+    var input6 = fieldBulider("E.T.D  Port", ["far", "fa-id-badge"], `LoadingVessel-${uniqueId}`, `${targetId}-${uniqueId}-field6`, 6)
+    var deleteBtn = deleteButtonBuilder();
+
+
+    var hr = document.createElement("hr");
+    const formBody = document.createElement("div")
+    formBody.classList.add( "col-12")
+    formBody.appendChild(hr)
+
+    
+    newSegment.appendChild(input1)
+    newSegment.appendChild(input2)
+    newSegment.appendChild(input3)
+    newSegment.appendChild(input4)
+    newSegment.appendChild(input5)
+    newSegment.appendChild(input6)
+    newSegment.appendChild(deleteBtn)
+    newSegment.appendChild(formBody)
+    accordionBody.insertBefore(newSegment, accordionBody.lastElementChild);
+    console.log(accordionBody.lastElementChild);
+    const portLoadingInput = {
+        "port": `${targetId}-${uniqueId}-field1`,
+        "vessel": `${targetId}-${uniqueId}-field2`,
+        "eta": `${targetId}-${uniqueId}-field3`,
+        "portAgentName": `${targetId}-${uniqueId}-field4`,
+        "Voyage": `${targetId}-${uniqueId}-field5`,
+        "etd": `${targetId}-${uniqueId}-field6`
+    };
+    initializeTypeahead(portLoadingData, portLoadingInput);
+    
+    $(`#${targetId}-${uniqueId}-field3`).pickadate({
+        selectMonths: true,
+        selectYears: true
+    });
+    $(`#${targetId}-${uniqueId}-field6`).pickadate({
+        selectMonths: true,
+        selectYears: true
+    })
+}
+
+
+
+
 function addNewDischargePortForm(event, targetId) {
     event.preventDefault();
     const accordionBody = document.getElementById(targetId);
