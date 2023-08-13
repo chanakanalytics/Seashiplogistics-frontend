@@ -3,6 +3,20 @@ $(function() {
 	// new PerfectScrollbar(".header-message-list"), new PerfectScrollbar(".header-notifications-list"),
 
 
+	
+		$('#open-success-alerts').on('click', function(){
+			$('#success-toster').show();
+		});
+
+	
+		$('#open-danger-alerts').on('click', function(){
+			$('#danger-toster').show();
+		});
+
+		$('.btn-close').on('click', function(){
+			$(this).parent('.alert').hide();
+		});
+
 	    $(".mobile-search-icon").on("click", function() {
 			$(".search-bar").addClass("full-search-bar")
 		}),

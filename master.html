@@ -168,9 +168,13 @@
             <div class="page-content">
                 <div class="d-flex align-items-center justify-content-between">
                     <h6 class="page-heading">DataTable Import</h6>
+                    <div>
+                        <button id="open-success-alerts" class="btn btn-primary">Open Success Alerts</button>
+                        <button id="open-danger-alerts" class="btn btn-secondary">Open Danger Alerts</button>
+                    </div>
                 </div>
                 <div class="table-responsive mt-5">
-                    <table id="masterTable" class="table mb-0 pt-3 table-striped table-bordered">
+                    <table id="masterTable" class="table  mb-0 pt-3 table-striped table-bordered">
                         <thead class="table-light">
                             <tr>
                                 <th class="check-box-row">
@@ -205,8 +209,10 @@
                                         <a href="javascript:;" class="delete mx-1"><i class="fa-solid fa-trash-can"></i></a>
                                     </div>
                                 </td>
+
+
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td class="text-start">
                                     <div class="check-box">
                                         <input type="checkbox" id="checkall" name="checkall"/>
@@ -376,7 +382,7 @@
                                         <a href="javascript:;" class="delete mx-1"><i class="fa-solid fa-trash-can"></i></a>
                                     </div>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -493,6 +499,31 @@
                         
                     </div>
                 </div>
+            </div>
+
+            <div class="toster-position">
+                <div id="success-toster" style="display: none;" class="alert mt-3 bg-white shadow-lg border-0 border-start border-5 border-success alert-dismissible fade show py-2">
+                    <div class="d-flex">
+                        
+                        <div class="ms-1">
+                            <h6 class="mb-0 text-success">Success Alerts</h6>
+                            <div>A simple success alert—check it out!</div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close"></button>
+                </div>
+
+                <div id="danger-toster" style="display: none;" class="alert mt-3 bg-white shadow-lg border-0 border-start border-5 border-danger alert-dismissible fade show py-2">
+                    <div class="d-flex align-items-center">
+                        
+                        <div class="ms-3">
+                            <h6 class="mb-0 text-danger">Danger Alerts</h6>
+                            <div>A simple danger alert—check it out!</div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close"></button>
+                </div>
+
             </div>
         </div>
         <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
